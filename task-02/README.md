@@ -19,3 +19,42 @@ I cloned this repo and went through all the commits to find another repo link wh
 ## PART-6
 Cloned this repo too and took screenshot of the victory.py file.
 ![image](https://github.com/user-attachments/assets/c2c66406-9454-46c5-b7c8-cc9847192bc4)
+
+
+
+# Terminal commands I Used :-
+
+*cd <directory_path: change the current working directory to a directory mentioned
+
+*ls: lists all the files and directories in the current directory
+
+*mkdir: this command can be used to create new directories on the file system. 
+
+*nano <file_name>: opens the default text editor for editing or creating a file
+
+*cat <file_name>: shows the content in the file
+
+*grep: searches for particular texts in files.
+
+*tree: shows the entire structure of the directory.
+
+*clear: clear terminal session.
+
+*echo -n <Base64EncodedStringHere> | base64 -d: decodes the Base64 code
+
+
+## Git commands I Used:-
+
+*git clone <url>: creates a copy of an existing Git repository
+
+*git add . : adds all the files to commit
+
+*git commit -m "message": commits the change with a message to be added to display in the commit log
+
+*git push: pushes all the contents in the local branch to remote branch ie move a local branch to another repository
+
+*git branch: lists all the branches present in the directory
+
+*git checkout <branch name>: switches from one branch to another branch
+
+*git status : displays the state of the working directory and the staged snapshot
