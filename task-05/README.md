@@ -1,26 +1,26 @@
 # TerminalTrolly
 
-Greetings, Shoppers! Welcome to the TerminalTrolly Challenge—a test of your problem-solving skills in the world of web.
+Greetings, Shoppers! Welcome to THE FOOTSHOP.
 
-Imagine you're part of a team responsible for managing a trendy online hypermarket. Unfortunately, our e-commerce platform has encountered unexpected technical issues, leaving customers unable to make purchases through the website.
+I know what you are thinking. "why is it named FOOTSHOP and there aint a single foot item?". Honestly I dont know I just liked the Logo so yeah that is the reason.
 
-To keep our loyal customers happy and the business running smoothly, we've devised a special challenge for you. Using a terminal-based interface—a digital lifeline to our shop's backend—you'll step into the shoes of our tech-savvy troubleshooters.
+Anyway, this task was a personal stress buster for me as I will talk about this in the blog post. Starting from fixing the broken terminal to making the contents of the bill, I thoroughly enjoyed this process A LOT.
+Personally I learnt a lot even though I could only make a basic layout but still I did. 
 
-Your mission is clear: navigate through the virtual maze of glitchy code and faulty scripts to successfully purchase products from our hypermarket.
+There were times when I got a little frustrated with my imagination and the execution but a lot of surfing the web, and i mean A LOT, helped me get somewhere with this project.
 
-## Briefing on the basics
+# INITIAL STAGE:
+The first step was to check the given code and the fault in it and make it right. I checked the index.html and it gave a basic layout of the product catalog and the terminal window so I knew after watching the demo that I have to work with this and add elements to this. 
+Then I went to check the style.css and saw the styling for some of the elements and the terminal window. (I got to know about the terminal styling and everything because of this task). Hence I started working on that.
+Next I checked the script.js to check what was the faulty code and carefully observed it.
+The errors were:
 
-If you haven't got much knowledge of HTML and CSS, don't worry! HTML is a language used to describe the structure of the pages you see on the browser, whereas CSS enables those pages to look beautiful and tidy. Additionally, JavaScript can be used to create dynamically updating content, control multimedia, and animate images! 
 
-Here are some resources to help you learn :
-- [Building your first with HTML and CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
-- [What is Javascript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
 
-You are always welcome to surf the web to learn more!
 
-## Guidlines
+Now came the part where I had to make it a fully functioning E-Commerce wesbsite.
 
-In this task, you are provided with a website containing a broken terminal. Your first objective is to recreate the User Interface (UI) displayed on the left side of the terminal, as shown in the demo provided below. You have to fetch the assets needed from the API we have provided. The design can be customized freely while ensuring it contains all the elements shown in the demo.
+ You have to fetch the assets needed from the API we have provided. The design can be customized freely while ensuring it contains all the elements shown in the demo.
 
 [DEMO VIDEO](https://drive.google.com/file/d/1OZuKV-NKayKc-9--DWFuF29liGCuQaep/view?usp=drive_link)
 <br>
