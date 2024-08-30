@@ -1,1 +1,2 @@
-
+## MEDIUM BLOG POST
+I have always read article and blogs from medium but had never made one and hence this task was super fun and relaxing. I chose task-05 i.e Terminal-Trolly for this because that task in particular was the one which I started in the beginning and also always did it in my breaks which I took from the other task as stress buster. Creating a Blog post was easy and it made me think creatively to come up with my own way to share my experience.
