@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    <div class="bill-container">
+        <div class="bill-header">
+            <h1>Checkout Bill</h1>
+        </div>
+        <div class="container">
+            
+            <div class="product-bought">
+                <div class="items">
+
+                </div>
+            </div>       
+        </div>
+
+        <div class="payment-button">
+            <button onclick="proceedForPayment()">Proceed for Payment</button>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    const itemsContainer = document.querySelector('.items');
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    cartItems.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'item';
+
+        itemDiv.innerHTML = `
+            <p>Product ID: ${item.productId}</p>
+            <p>Product Name: ${item.productName}</p>
+            <p>Quantity: ${item.quantity}</p>
+            <p>Price: $${item.price.toFixed(2)}</p>
+            <p>Total: $${(item.price * item.quantity).toFixed(2)}</p>
+        `;
+        
+        itemsContainer.appendChild(itemDiv);
+    });
+
+    // Clear the cart after showing the bill
+    localStorage.removeItem('cartItems');
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+    background-color: #38302e;
+}
+
+.bill-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 50px 50px rgba(255, 254, 254, 0.1);
+    border-radius: 8px;
+    
+}
+
+.bill-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2e1709; 
+}
+
+.bill-header h1 {
+    color: #2c3e50;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.product-bought {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between product boxes */
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between individual item boxes */
+}
+
+.item {
+    background-color: #b7937a;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.1); /* Zoom in by 10% */
+  }
+
+.item p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.payment-button {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.payment-button button,
+.payment-button .button {
+    background-color: #e4403d; /* Change color as needed */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.payment-button button:hover,
+.payment-button .button:hover {
+    background-color: #0b0b0b; /* Darker color on hover */
+}
