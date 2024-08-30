@@ -1,4 +1,4 @@
-## INTRODDUCTION
+## INTRODUCTION
 Hello everybody !!
 I am Shria Nair from second year CSE-Core dept. Talking about myself, I have a huge thing for creativity. Creativity in Art or be it creativity in the technical field. The passion for learning in me is the same as the passion I have for Art, Music and Photography. To sum it all up, I absolutely LOVE to learn, be it anything and everything.
 
@@ -13,4 +13,25 @@ Initially I would completely try to understand how everything in the club works 
 
 ## WHAT ARE YOUR FIELDS OF INTEREST, AND HOW DO YOU PLAN ON WORKING ON THEM?
 My field of interest currently lies in Full Stack and Web Dev but I am just exploring more and more till I find THE perfect domain for myself, till then I just plan on learning new skills and technologies which might help me achieve what i want in this journey.
+
+## WHAT ARE YOUR THOUGHTS AND FEEDBACK ON THE PRAVESHAN SELECTION PROCESS?
+A lot of these tasks very really fun to do without having much to stress upon and just learning a lot of concepts and apply it but some of the tasks were really mind boggling to finish and made me a little exhausted but at the end of the day, i learnt. I learnt a lot of things from these tasks itself so I am really excited to know what is in store for me if I get a chance to join the club !!
+
+
+
+# Task-Status
+
+| Task List | Description | Status |
+| :-:       | :-:         | :-:    |
+| Task-00 | Install Linux | Completed |
+| Task-01 |  Type Maestro  | Completed |
+| Task -02| Terminal Chaos | Completed |
+| Task-03| Hello, World! | |
+| Task-04| Gopal and his PagePal | |
+| Task-05| TerminalTrolly | Completed|
+| Task-06| OpenDocs | |
+| Task-07| Pirate's Dilemma ||
+| Task-08| Blog Burst | Completed|
+| Task-09| HERO-DEX! |     |
+| Task-10|  Operation Pixel Merge | Completed|
 
