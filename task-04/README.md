@@ -9,6 +9,7 @@ https://youtu.be/NwBWW8cNCP4?si=cr9UZ_WhHgSpT8yd this video from CS dojo also he
 I had faced issues in the /book command as it was not able to fetch the data properly but after observing the code and trying some debug statements i finally got the issue so I did not have to sit with that for a long time.
 I also understood how responses work in this part.
 
+## FINAL STEPS:
 The next part was implementation of the /list command which has to ask users to give /reading_list command for them to get options to add, delete or view their reading list document. This part actually took a lot of time for me but I knew I can do it so I tried with a lot of debug statements and if-else to understand what is wrong and finally got it correct with it initialising a document if it is not present in the system and then proceeding further with the other functions. I also got to know about buttons with https://youtu.be/0XJJCvpe7as?si=IjEKDYOeXeGBRFKb this particular video and applied the same in it.
 
 Similarly I finished implementing the deleting command and viewing command and thought its over until I tried testing it. Well this is actually the part i took the most time. Trying to check every command and also trying to run it and understood what all this code lacks. I took note of all of it and tried adding all of it in my code to make it fully functioning. Even though this bot is not a high end bot but I think this was a great learning experience for me and I genuinely enjoyed it the most !! 
