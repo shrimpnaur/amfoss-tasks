@@ -9,6 +9,7 @@ It was fun in its own way and kept me engaging throughout the process.
 4) Defined function to find the imdb id by using the IMDb library to search for the movie by name.
 5) Defined functions to compute hash, scrape subtitles ( which basically sends a request to parse the html for subtitles )
 6) Defined function for downloading subtitles from the given list by providing the option number.
+   https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/ took a bit of help to understand web scraping code.
 
 I still believe I can learn a lot from this one single project and would love to do so in future.
 
