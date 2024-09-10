@@ -1,2 +1,5 @@
 ## MEDIUM BLOG POST
-I have always read article and blogs from medium but had never made one and hence this task was super fun and relaxing. I chose task-05 i.e Terminal-Trolly for this because that task in particular was the one which I started in the beginning and also always did it in my breaks which I took from the other task as stress buster. Creating a Blog post was easy and it made me think creatively to come up with my own way to share my experience.
+
+## TELEBOT.
+
+I will be honest, I was too lazy to do this task because I had to re-write the entire blog from scratch which was initially almost a 7-8 min read. Dont know why that happened but the after clicking on the publish button, it never got published and I was heartbroken because I had made the blog really interesting with lots of technical explanation. I wrote it again but again it isnt and doesnt feel the same :')
