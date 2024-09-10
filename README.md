@@ -28,7 +28,7 @@ A lot of these tasks very really fun to do without having much to stress upon an
 | Task -02| Terminal Chaos | Completed |
 | Task-03| Hello, World! |Completed, delete comments, learn|
 | Task-04| Gopal and his PagePal | Completed, learn|
-| Task-05| TerminalTrolly | read me, learn|
+| Task-05| TerminalTrolly | Completed, read me, learn|
 | Task-06| OpenDocs ||
 | Task-07| Pirate's Dilemma |Completed, read me-learn|
 | Task-08| Blog Burst |Completed|
