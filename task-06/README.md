@@ -125,6 +125,11 @@ spicetify/spicetify-themes - The official Spicetify themes repository. Feel free
 extensions and custom apps later.
 
 
+Contribution Guidelies
+
+    Reporting Issues: Please report any issues or bugs using the GitHub Issues tab.
+
+    Submitting Pull Requests: Fork the repository, make your changes, and submit a pull request with a description of your changes.
 
 
 
