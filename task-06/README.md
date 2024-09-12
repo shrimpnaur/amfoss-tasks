@@ -172,9 +172,6 @@ Submitting Pull Requests: Fork the repository, make your changes, and submit a p
 *For proper guidelines, check spicetify-themes CONTRIBUTING.MD file.
 
 
-## Spicetify provides a robust and flexible way to personalize your Spotify experience with custom themes, extensions, and scripts. Its features allow users to control the look and feel of Spotify in detail, ensuring a completely unique interface. Whether you prefer minimalism, vibrant colors, or additional functionality, Spicetify empowers you to shape Spotify to match your tastes and is backed by an open-source community where users actively contribute new themes, extensions, and features.
-
-
  
 
 
