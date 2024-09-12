@@ -1,198 +1,139 @@
 ## OPEN DOCS:
-The open source project I used for this task is 'Take Notes' and the demo is available at [takenote.dev](https://takenote.dev).
+The open source project I used for this task is 'Spicetify-themes'.
+This repo is a part of the entire 'spicetify' project whose documentation will be given below with the 'spicetify-themes'.
 
-## TAKE NOTES DOCUMENTATION:
+I have been using spicetify since a long time and documenting this was a very super task for me as I personally know how amazing this project is.
+
+## SPICETIFY DOCUMENTATION:
 
 ## Overview
-TakeNote is a note-taking app for the web. It is a static site without a database and does not sync your notes to the cloud. The notes are persisted temporarily in local storage, but we can download all notes in markdown format as a zip.
+Spicetify is a multiplatform command-line tool to customize the official Spotify client.
 
-However, there is a hidden version in the code that integrates with GitHub to store notes in a private GitHub repository. The developer has chosen not to support this version due to:
+Linux and MacOS
+Shell (pre-built binary)
+Spicetify CLI
 
-- Not wanting to maintain the app alongside personal commitments.
-- Concerns about requesting private repository permissions from users.
-- Server maintenance and handling GitHub API rate limiting issues.
-- The inefficiency of storing multiple notes on GitHub due to limitations in the API (can't batch-create many files).
-- Instead of backing up to local storage, your notes will back up to a private repository in your account called `takenote-data`. Due to the        following reasons I'm choosing not to deploy or maintain this portion of the application:
+curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
 
-**TakeNote was created from these technologies: 
-TypeScript, React, Redux, Node, Express, Codemirror, Webpack, Jest, Cypress, Feather Icons, ESLint, and Mousetrap, among other awesome open-source software.
+Spicetify Marketplace
 
-
-## Features
-
-1. `Minimalist UI:` TakeNote is designed to be distraction-free with a simple and clean user interface.
-2. `Static Site with No Database:` The core version of the app runs without a backend or database, making it lightweight and fast. 
-3. `Markdown Support:` Notes can be written and formatted using Markdown, allowing for headings, bold, italics, lists, and more.
-4. `Organized Note Management:` Users can organize their notes by creating folders.
-5. `Fast Search:` The app includes an instant search feature, which allows users to quickly find notes based on keywords or tags.
-6. `Keyboard Shortcuts:` TakeNote supports a range of keyboard shortcuts for quicker navigation and note management.
-7. `Offline Access:` Since the core app is a static site, it can be used offline. 
-9. `Hidden GitHub Integration (Optional):` In a more advanced version of the app, users can back up their notes to a private GitHub repository using OAuth.This version is for users who prefer syncing notes via GitHub rather than local storage.
-10. `No User Tracking or Analytics:` TakeNote respects user privacy and does not track or collect personal data. There are no analytics or tracking systems embedded in the app.
-11. `Dark Mode:` A dark mode option is available to reduce eye strain during late-night note-taking sessions.
-12. `Cross-Platform Compatibility:` Being a web app, TakeNote works on any platform with a modern browser, including Windows, macOS, and Linux.
-
-## SETUP:
-
-Demo Development
-Steps to Clone and Install:
-Clone the repository:
-
-```bash
-Copy code
-git clone git@github.com:taniarascia/takenote
-```
-Navigate into the project directory:
-After cloning, you need to enter the project folder where the code resides.
-
- ``` bash
-Copy code
-cd takenote
-```
-
-Install project dependencies:
-Installing dependencies is essential because the app relies on external libraries. This command installs everything listed in the package.json file (React, Redux, Express, etc.).
-
-```bash
-Copy code
-npm install
-```
-
-Running the Development Server:
-Run the client (React frontend):
-This starts a local server that runs the React frontend of the app. The development server hot-reloads, meaning it automatically updates the app when you make changes.
-
-```bash
-Copy code
-npm run client
-```
-
-Full Application Development (self-hosted)
-Pre-Installation:
-
-Setting Up GitHub OAuth:
-
-Before you can use the app locally with GitHub OAuth for user authentication (allowing users to log in via GitHub and save their notes to private repositories), you need to configure an OAuth application.
-
-Go to GitHub Developer Settings:
-
-On GitHub, navigate to Settings > Developer Settings > OAuth Apps.
-Create a New OAuth Application:
-
-When creating a new OAuth app:
-Application name: This will be displayed to users (e.g., "TakeNote Development").
-Homepage URL: http://localhost:3000 (this is where the app will run locally).
-Authorization callback URL: http://localhost:3000/api/auth/callback (this URL is used after successful authentication).
-Create a .env file:
-
-Create a .env file in the root of the project (to store environment variables like your GitHub credentials).
-Add your OAuth credentials:
-env
-Copy code
-CLIENT_ID=xxx
-CLIENT_SECRET=xxxx
-DEMO=true
-The DEMO=true variable means the app is in demo mode (using local storage). Removing this will enable GitHub integration.
-
-Installation and Development Mode:
-Clone and Install:
-
-```bash
-Copy code
-git clone git@github.com:taniarascia/takenote
-cd takenote
-npm install
-```
-
-Run the Development Servers:
-
-In development mode, you need to run two servers:
-
-Express backend (runs on port 5000).
-React frontend (runs on port 3000).
-Command to start both servers at once:
-
-```bash
-Copy code
-npm run dev
-```
-After this, the app will be accessible at http://localhost:3000.
-
-Note: The frontend and backend are separate processes, and any API requests from the frontend will be proxied to the backend on port 5000.
-
-Production Mode
-In production, the React frontend is built into static files that are served by the Express server.
-
-Build the app and run the server:
-Build: Compiles the React app for production.
-
-Start: Launches the Express server to serve the compiled files on port 5000.
+curl -fsSL https://raw.githubusercontent.com/spicetify/marketplace/main/resources/install.sh | sh
 
 
-```bash
-Copy code
-npm run build && npm run start
-```
+## Basic Usage
+After installing Spicetify and Spicetify's Marketplace, you can use it to customize your Spotify client using all the available extensions and themes found in the Marketplace.
 
-After this, the app will be accessible at http://localhost:5000.
+Updating
+Spotify, every now and then, updates its client. Since we have no power over this process, you will likely need to re-apply Spicetify.
 
-Run in Docker
-Docker is an alternative method to run the app in a containerized environment. This is useful for ensuring that the app runs in a consistent environment across different machines.
+However, the update might have major changes to the client, which means you will need to run spicetify update (spicetify upgrade in Spicetify versions below 2.27.0) every time you update Spotify. If no update for Spicetify is available, it means that it either still works by simply running spicetify backup apply, or that we are still working on updating Spicetify to work on the new version.
 
-Build Docker Image:
+## Advanced Usage
+A guide about advanced usage of Spicetify and venturing outside of the Spicetify Marketplace.
 
-This command builds a Docker image for the app.
-Replace xxx with your GitHub OAuth credentials.
+📄️ Installation
+⚡ An advanced view on how to install Spicetify.
 
-```bash
-Copy code
-docker build --build-arg CLIENT_ID=xxx -t takenote:mytag .
-```
-Run Docker Container:
+📄️ Uninstallation
+🗑 How to remove Spicetify.
 
-After building the image, run it as a Docker container. Set the environment variables for the GitHub OAuth credentials.
+📄️ Command Line Interface (CLI)
+👾 Using Spicetify from the command line.
 
-```bash
-Copy code
-docker run \
--e CLIENT_ID=xxx \
--e CLIENT_SECRET=xxxx \
--e NODE_ENV=development \
--p 5000:5000 \
-takenote:mytag
-```
+📄️ Themes
+✨ Themes for Spicetify.
 
-Access the app:
+📄️ Extensions
+🧩 Manually installing Extensions.
 
-Go to http://localhost:5000 to view the app.
+📄️ Custom Apps
+💥 Manually installing Custom Apps.
 
-Seed Data
-If you want to populate the app with some test data (notes), you can use the seed.js file:
 
-Open your browser console and paste the contents of seed.js into it. This will populate the app with some initial notes for testing.
-Testing
-Unit and Component/Integration Testing:
-Jest is used for unit and component testing. To run the tests:
+## Installation
+Linux and MacOS
+Shell (pre-built binary) - Recommended
+curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
 
-bash
-Copy code
-npm run test
-Jest Runner in VSCode:
 
-To run tests directly within Visual Studio Code using Jest Runner, add this configuration to your settings.json:
-json
-Copy code
-"jestrunner.configPath": "config/jest.config.js"
-End-to-End Testing with Cypress:
-Cypress is used for end-to-end testing to simulate user interactions.
-Run the app in one terminal:
+Spotify installed from AUR
+Before applying Spicetify, you need to gain write permission on Spotify files, by running command:
 
-bash
-Copy code
-npm run client
-Run Cypress tests in another terminal:
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
 
-bash
-Copy code
-npm run test:e2e:open
+Note: Your Spotify client location might be different.
+
+Spotify installed via spotify-launcher package (Arch Linux)
+If Spotify is installed through the spotify-launcher package, then Spotify won't install to /opt/spotify and is instead in this folder: $HOME/.local/share/spotify-launcher/install/usr/share/spotify/
+
+This directory will need to be added to the spotify-path section of the config (and you won't need to change any permissions like the AUR method).
+
+Note: spotify-path must be an abslolute path. Do not use ~ to reference the home folder.
+
+Spotify installed from Snap
+Apps installed from Snap cannot be modified so you need to follow these steps to get Spicetify working:
+
+Uninstall Spotify in Snap or run command snap remove spotify
+Install Spotify using apt:
+curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+
+
+After Spotify is installed successfully, you need to gain read write permissions on Spotify files, by running commands:
+sudo chmod a+wr /usr/share/spotify
+sudo chmod a+wr /usr/share/spotify/Apps -R
+
+Note: Your Spotify client location might be different.
+
+
+Command Line Interface (CLI)
+Run with no command once to generate config file
+
+spicetify
+
+If you just want to use Custom Apps and Extensions head over to each specific sections, if you want to create you own theme, keep reading below.
+
+Make sure config file is created successfully and there is no error, then run:
+
+spicetify backup apply enable-devtools
+
+From now, after changing colors in color.ini or CSS in user.css, you just need to run:
+
+spicetify update
+
+to update your theme.
+
+In Spotify, hit Ctrl Shift R / Command Shift R to reload and receive visual update of your theme.
+
+For other commands and additional flags information, please run:
+
+spicetify --help
+
+
+
+
+Themes
+One of the most popular features in Spicetify is theming. You can customize your Spotify to your heart's desire! However, this is a very cumbersome task.
+
+For this reason, the theming heroes of the Spicetify community have created a huge library of themes which can be found in the following repositories:
+
+spicetify/spicetify-themes - The official Spicetify themes repository. Feel free to contribute with more themes!
+
+
+extensions and custom apps later.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
 
