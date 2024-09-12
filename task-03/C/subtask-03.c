@@ -1,31 +1,31 @@
-#include <stdio.h> // Include the standard input/output header file.
+#include <stdio.h>
 
-void main()
-{
-    int i, j, r; // Declare variables for loop control and the number of rows.
-    printf("Input number of rows (total rows of diamond): "); // Prompt the user to input the number of rows.
-    scanf("%d", &r); // Read the number of rows from the user.
+int main() {
+    int n;
 
-    // Calculate the middle row index for symmetry
-    int mid = r / 2;
+    printf("Enter odd number: "); //since pattern contains only odd number of *
+    scanf("%d", &n);
 
-    // Print the upper half of the diamond
-    for (i = 0; i <= mid; i++) 
-    {
-        for (j = 0; j < mid - i; j++) // Loop to print spaces before the asterisks.
-            printf(" ");
-        for (j = 0; j < 2 * i + 1; j++) // Loop to print asterisks with spaces.
-            printf("* ");
-        printf("\n"); // Move to the next line after completing a row.
+    if (n % 2 == 0) {
+        printf("The number must be odd.\n");
+        return 1;
     }
 
-    // Print the lower half of the diamond
-    for (i = mid - 1; i >= 0; i--) 
-    {
-        for (j = 0; j < mid - i; j++) // Loop to print spaces before the asterisks.
+
+    for (int i = 1; i <= n; i += 2) {
+        for (int j = 0; j < (n - i) / 2; j++)
             printf(" ");
-        for (j = 0; j < 2 * i + 1; j++) // Loop to print asterisks with spaces.
-            printf("* ");
-        printf("\n"); // Move to the next line after completing a row.
+        for (int j = 0; j < i; j++)
+            printf("*");
+        printf("\n");
     }
+    for (int i = n - 2; i > 0; i -= 2) {
+        for (int j = 0; j < (n - i) / 2; j++)
+            printf(" ");
+        for (int j = 0; j < i; j++)
+            printf("*");
+        printf("\n");
+    }
+
+    return 0;
 }

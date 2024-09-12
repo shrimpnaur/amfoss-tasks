@@ -1,13 +1,29 @@
 #include <iostream>
-#include <fstream>
-#include <string>
 
-void generateDiamond(int n, std::ostream& out) {
-    for (int i = 0; i < n; ++i) {
-        out << std::string(n - i - 1, ' ') << std::string(2 * i + 1, '*') << std::endl;
+void print_diamond(int n) {
+
+    for (int i = 1; i <= n; i += 2) {
+        for (int j = 0; j < (n - i) / 2; j++) {
+            std::cout << " ";
+        }
+        
+        for (int j = 0; j < i; j++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
     }
-    for (int i = n - 2; i >= 0; --i) {
-        out << std::string(n - i - 1, ' ') << std::string(2 * i + 1, '*') << std::endl;
+
+
+    for (int i = n - 2; i > 0; i -= 2) {
+
+        for (int j = 0; j < (n - i) / 2; j++) {
+            std::cout << " ";
+        }
+
+        for (int j = 0; j < i; j++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
     }
 }
 
@@ -15,9 +31,7 @@ int main() {
     int n;
     std::cout << "Enter a number: ";
     std::cin >> n;
-
-    generateDiamond(n, std::cout);
-
+    print_diamond(n);
     return 0;
 }
 

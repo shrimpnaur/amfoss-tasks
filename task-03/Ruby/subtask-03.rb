@@ -1,13 +1,16 @@
-def print_diamond(n)
-  (0...n).each do |i|
-    puts ' ' * (n - i - 1) + '*' * (2 * i + 1)
-  end
-  (n - 2).downto(0) do |i|
-    puts ' ' * (n - i - 1) + '*' * (2 * i + 1)
-  end
+
+puts "Enter the number of rows (odd number) for the diamond:"
+n = gets.to_i
+
+ 
+n += 1 if n.even?
+
+
+(1..n).step(2) do |i|
+  puts ' ' * ((n - i) / 2) + '*' * i
+end
+(n - 2).step(1, -2) do |i|
+  puts ' ' * ((n - i) / 2) + '*' * i
 end
 
-print "Enter a number: "
-n = gets.to_i
-print_diamond(n)
 

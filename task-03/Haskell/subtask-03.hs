@@ -1,16 +1,18 @@
-import Control.Monad (replicateM_)
+ 
+printDiamond :: Int -> IO ()
+printDiamond n = do
 
-generateDiamond :: Int -> String
-generateDiamond n = unlines $ top ++ bottom
-  where
-    top = [ replicate (n - i - 1) ' ' ++ replicate (2 * i + 1) '*' | i <- [0..n-1] ]
-    bottom = [ replicate (n - i - 1) ' ' ++ replicate (2 * i + 1) '*' | i <- reverse [0..n-2] ]
+    mapM_ putStrLn [replicate ((n - i) `div` 2) ' ' ++ replicate i '*' | i <- [1,3..n]]
+
+    mapM_ putStrLn [replicate ((n - i) `div` 2) ' ' ++ replicate i '*' | i <- [n-2,n-4..1]]
 
 main :: IO ()
 main = do
-    -- Read the number n from the console input
-    putStrLn "Enter a number:"
+
+    putStrLn "Enter a number: "
     input <- getLine
     let n = read input :: Int
-    -- Generate and print the diamond pattern
-    putStrLn (generateDiamond n)
+    let oddN = if n `mod` 2 == 0 then n + 1 else n
+
+    printDiamond oddN
+

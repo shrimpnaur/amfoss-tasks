@@ -1,24 +1,13 @@
-# Read number from input.txt
-n = File.read('input.txt').strip.to_i
 
-# Function to generate diamond pattern
-def generate_diamond(n)
-  pattern = []
-  (0...n).each do |i|
-    stars = '*' * (2 * i + 1)
-    pattern << stars.center(2 * n - 1)
-  end
-  (n - 2).downto(0) do |i|
-    stars = '*' * (2 * i + 1)
-    pattern << stars.center(2 * n - 1)
-  end
-  pattern
-end
+n = File.read('input.txt').to_i
+n += 1 if n.even?
 
-# Write pattern to output.txt
-File.open('output.txt', 'w') do |file|
-  generate_diamond(n).each do |line|
-    file.puts(line)
-  end
-end
+pattern = ""
+
+(1..n).step(2) { |i| pattern << "#{' ' * ((n - i) / 2)}#{'*' * i}\n" }
+
+(n - 2).step(1, -2) { |i| pattern << "#{' ' * ((n - i) / 2)}#{'*' * i}\n" }
+
+File.write('output.txt', pattern)
+
 

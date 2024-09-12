@@ -2,24 +2,46 @@
 #include <fstream>
 #include <string>
 
-void generate_diamond(int n) {
-    std::ofstream file("output.txt");
-    for (int i = 0; i < n; ++i) {
-        file << std::string(n - i - 1, ' ') << std::string(2 * i + 1, '*') << '\n';
-    }
-    for (int i = n - 2; i >= 0; --i) {
-        file << std::string(n - i - 1, ' ') << std::string(2 * i + 1, '*') << '\n';
-    }
-    file.close();
-}
-
 int main() {
-    std::ifstream file("input.txt");
-    int n;
-    file >> n;
-    file.close();
 
-    generate_diamond(n);
+    std::ifstream infile("input.txt");
+    if (!infile) {
+        std::cerr << "Error opening input file" << std::endl;
+        return 1;
+    }
+
+
+    int n;
+    infile >> n;
+    infile.close();
+
+
+    if (n % 2 == 0) {
+        n++;
+    }
+
+    std::string pattern;
+
+
+    for (int i = 1; i <= n; i += 2) {
+        pattern += std::string((n - i) / 2, ' ') + std::string(i, '*') + "\n";
+    }
+
+
+    for (int i = n - 2; i > 0; i -= 2) {
+        pattern += std::string((n - i) / 2, ' ') + std::string(i, '*') + "\n";
+    }
+
+
+    std::ofstream outfile("outputstar.txt");
+    if (!outfile) {
+        std::cerr << "Error creating output file" << std::endl;
+        return 1;
+    }
+    
+    outfile << pattern;
+    outfile.close();
 
     return 0;
 }
+
