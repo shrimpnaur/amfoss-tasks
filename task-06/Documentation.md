@@ -7,10 +7,11 @@ The Spicetify customization process involves modifying Spotify’s UI elements t
 
 (Check all the themes preview in THEMES.MD file)
 
-Every theme should contain:
+## Every theme should contain:
 
--color.ini: store colors value that later will be converted to CSS variables
--user.css: set of custom CSS rules to manipulate, hide, move UI elements.
+- color.ini: store colors value that later will be converted to CSS variables
+
+- user.css: set of custom CSS rules to manipulate, hide, move UI elements.
 
 
 ## EXAMPLE THEME: BURNT SIENNA
