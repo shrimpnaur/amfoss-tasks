@@ -11,4 +11,10 @@
 2. The buy does not redirect to any other page and also I for some reason was not able to make the icons for the header as shown in the demo video so I tried customising it in my own way.
 3. ``` <audio id="welcome-audio" src="Welcome - Sound Effect.mp3" preload="auto"></audio> ``` tried adding this just to make it a little more fun
 4. I realised that I couldve used loop to code the entire product catalog to make the code shorter. Kept this in mind for future.
+5. Made the website responsive too.
+6. Showed the total price by calculating the total amount into quantity of it.
+
+
+I enjoyed this task as this was one of my comfort tasks where I just kept on learning more and understood more js concepts and tried implementing it.
+Hoping to make more projects like these.
   
