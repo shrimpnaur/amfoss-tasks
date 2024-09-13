@@ -9,4 +9,6 @@
 ## Things to note.
 1. The add function and remove function work on product ID which is given by numbers for eg Product ID 1 and so on.
 2. The buy does not redirect to any other page and also I for some reason was not able to make the icons for the header as shown in the demo video so I tried customising it in my own way.
-   
+3. ``` <audio id="welcome-audio" src="Welcome - Sound Effect.mp3" preload="auto"></audio> ``` tried adding this just to make it a little more fun
+4. I realised that I couldve used loop to code the entire product catalog to make the code shorter. Kept this in mind for future.
+  
