@@ -31,7 +31,6 @@ def process_images(image_folder):
     all_files = os.listdir(image_folder)
     print(f"All files: {all_files}")  # debug
 
-    # extract filenames
     image_files = [f for f in all_files if f.endswith('.png')]
     
 #sorting
