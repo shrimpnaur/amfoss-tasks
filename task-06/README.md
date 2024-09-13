@@ -2,7 +2,7 @@
 The open source project I used for this task is 'Spicetify-themes'.
 This repo is a part of the entire 'spicetify' project whose documentation will be given below with the 'spicetify-themes'.
 
-I have been using spicetify since a long time and documenting this was a very super task for me as I personally know how amazing this project is.
+I have been using spicetify since a long time and documenting this was a very fun task for me as I personally know how amazing this project is.
 
 ## SPICETIFY DOCUMENTATION:
 
