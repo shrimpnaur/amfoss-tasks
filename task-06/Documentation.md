@@ -73,8 +73,8 @@ Icons and Controls
     width: 28px;
 }
 ```
-Play/Pause Icon: Scaled up for better interactivity.
-Player Controls: Larger buttons ensure easier control handling.
+- Play/Pause Icon: Scaled up for better interactivity.
+- Player Controls: Larger buttons ensure easier control handling.
 
 
 Progress Bar
@@ -88,8 +88,8 @@ Progress Bar
     margin-right: 5px;
 }
 ```
-Foreground Color: Custom color matching the theme's button shade.
-Adjusted Margins: Provides a more balanced look.
+- Foreground Color: Custom color matching the theme's button shade.
+- Adjusted Margins: Provides a more balanced look.
 
 
 ## Advanced Customizations
@@ -103,8 +103,8 @@ Background and Shadows
     box-shadow: 0 4px 20px rgba(var(--spice-rgb-shadow), 0.5);
 }
 ```
-Background Color: Removed gradients for a flat, clean aesthetic.
-Shadow Effect: A soft shadow adds depth to the cover area.
+- Background Color: Removed gradients for a flat, clean aesthetic.
+- Shadow Effect: A soft shadow adds depth to the cover area.
 
 Scrollbars
 css
@@ -127,16 +127,16 @@ Menu Text and Font
 Unified Font: Ensures a consistent font style across dropdowns and menus.
 
 Customization Features
--Dynamic Font Adjustments: Text elements across the app are easier to read with larger font sizes for key components.
--Minimalist Design: Removal of background gradients keeps the design sleek and professional.
--Custom Controls: Enhanced buttons, icons, and sliders ensure that users can interact with the interface effortlessly.
--This setup offers a modern, elegant Spotify UI, with easily customizable elements for further personalization.
+- Dynamic Font Adjustments: Text elements across the app are easier to read with larger font sizes for key components.
+- Minimalist Design: Removal of background gradients keeps the design sleek and professional.
+- Custom Controls: Enhanced buttons, icons, and sliders ensure that users can interact with the interface effortlessly.
+- This setup offers a modern, elegant Spotify UI, with easily customizable elements for further personalization.
 
 Usage
-Step 1: Place the color.ini in the Spicetify themes directory (~/.config/spicetify/Themes).
-Step 2: Save the CSS modifications in a corresponding .css file in the same folder.
-Step 3: Run spicetify apply to apply the theme.
-Step 4: Restart Spotify for the changes to take effect.
+- Step 1: Place the color.ini in the Spicetify themes directory (~/.config/spicetify/Themes).
+- Step 2: Save the CSS modifications in a corresponding .css file in the same folder.
+- Step 3: Run spicetify apply to apply the theme.
+- Step 4: Restart Spotify for the changes to take effect.
 
 
 
