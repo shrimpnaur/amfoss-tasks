@@ -126,13 +126,13 @@ Menu Text and Font
 ```
 Unified Font: Ensures a consistent font style across dropdowns and menus.
 
-Customization Features
+# Customization Features
 - Dynamic Font Adjustments: Text elements across the app are easier to read with larger font sizes for key components.
 - Minimalist Design: Removal of background gradients keeps the design sleek and professional.
 - Custom Controls: Enhanced buttons, icons, and sliders ensure that users can interact with the interface effortlessly.
 - This setup offers a modern, elegant Spotify UI, with easily customizable elements for further personalization.
 
-Usage
+# Usage
 - Step 1: Place the color.ini in the Spicetify themes directory (~/.config/spicetify/Themes).
 - Step 2: Save the CSS modifications in a corresponding .css file in the same folder.
 - Step 3: Run spicetify apply to apply the theme.
