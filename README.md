@@ -26,12 +26,12 @@ A lot of these tasks very really fun to do without having much to stress upon an
 | Task-00 | Install Linux | Completed |
 | Task-01 |  Type Maestro  | Completed |
 | Task -02| Terminal Chaos | Completed |
-| Task-03| Hello, World! |Completed, delete comments, learn|
-| Task-04| Gopal and his PagePal | Completed, learn|
-| Task-05| TerminalTrolly | Completed, read me, learn|
-| Task-06| OpenDocs ||
-| Task-07| Pirate's Dilemma |Completed, read me-learn|
+| Task-03| Hello, World! |Completed|
+| Task-04| Gopal and his PagePal | Completed|
+| Task-05| TerminalTrolly | Completed|
+| Task-06| OpenDocs |Completed|
+| Task-07| Pirate's Dilemma |Completed|
 | Task-08| Blog Burst |Completed|
-| Task-09| HERO-DEX! ||
-| Task-10|  Operation Pixel Merge |Completed, readme-learn|
+| Task-09| HERO-DEX! |Could not complete due to storage issues|
+| Task-10|  Operation Pixel Merge |Completed|
 
