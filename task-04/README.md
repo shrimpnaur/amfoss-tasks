@@ -1,4 +1,4 @@
-## GOPAL'S PAGEPAL
+## GOPAL'S PAGEPAL (@pagep_bot)
 Phew that was reaaally fun. The funny thing is I had doubts if I could finish this task at all or not because my BotFather was not replying to me (that is what I thought) but turns out I was contacting the wrong BotFather this entire time cause there a lot out there :') my bad. But after getting the token and my API key, I was all set to dedicate my time to make this Bot and honestly it was a very fun process !!
 
 ## INITIAL STEPS:
