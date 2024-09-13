@@ -12,47 +12,65 @@
             <h1>Checkout Bill</h1>
         </div>
         <div class="container">
-            
             <div class="product-bought">
                 <div class="items">
-
                 </div>
             </div>       
-        </div>
 
+            <div class="summary">
+                <div class="summary-item">
+                    <p>Shipping: <span>Free</span></p>
+                </div>
+                <div class="summary-item">
+                    <p>Tax: <span>$15.00</span></p>
+                </div>
+                <div class="summary-item total">
+                    <p>Total Price: <span id="total-price"></span></p>
+                </div>
+            </div>
+        </div>
         <div class="payment-button">
             <button onclick="proceedForPayment()">Proceed for Payment</button>
         </div>
     </div>
 
-    </div>
-
-
     <script>
-       document.addEventListener('DOMContentLoaded', function() {
-    const itemsContainer = document.querySelector('.items');
-    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        document.addEventListener('DOMContentLoaded', function() {
+            const itemsContainer = document.querySelector('.items');
+            const totalPriceContainer = document.getElementById('total-price');
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            let totalPrice = 0;
 
-    cartItems.forEach(item => {
-        const itemDiv = document.createElement('div');
-        itemDiv.className = 'item';
+            cartItems.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'item';
 
-        itemDiv.innerHTML = `
-            <p>Product ID: ${item.productId}</p>
-            <p>Product Name: ${item.productName}</p>
-            <p>Quantity: ${item.quantity}</p>
-            <p>Price: $${item.price.toFixed(2)}</p>
-            <p>Total: $${(item.price * item.quantity).toFixed(2)}</p>
-        `;
-        
-        itemsContainer.appendChild(itemDiv);
-    });
+                //Debug
+                console.log(item.imageURL);
 
-    // Clear the cart after showing the bill
-    localStorage.removeItem('cartItems');
-});
+                itemDiv.innerHTML = `
+                    <div class="item-details">
+                        <p>${item.productName} x ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}</p>
+                    </div>
+                `;
 
+                itemsContainer.appendChild(itemDiv);
 
+                totalPrice += item.price * item.quantity;
+            });
+
+           
+            totalPrice += 15;
+
+            totalPriceContainer.textContent = `$${totalPrice.toFixed(2)}`;
+
+            //Clear the cart after showing the bill
+            localStorage.removeItem('cartItems');
+        });
+
+        function proceedForPayment() {
+            alert('Proceeding to payment!');
+        }
     </script>
 </body>
 </html>

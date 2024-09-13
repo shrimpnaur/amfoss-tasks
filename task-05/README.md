@@ -1,20 +1,43 @@
-## TERMINAL TROLLY:
+# TerminalTrolly
 
-# Initial-Steps
-1. First I checked the resource given in the repository and I saw that I was given a code for terminal based website and I knew that I had to implement all the changes in it.
-2. I started looking at the site from where I  had to fetch the products from and honestly that was such a great resource. After knowing how to fetch the data and trying to run the code given in the FakeStoreAPI.
-3. Then I started to focus on making the user interface first with html and css and tried to make it minimalistic yet good looking and made another page for checkout as well.
-4. The checkout page was very basic first but I tried making it a little more good looking but still I am not really satisfied with the results.
+Greetings, Shoppers! Welcome to the TerminalTrolly Challenge—a test of your problem-solving skills in the world of web.
 
-## Things to note.
-1. The add function and remove function work on product ID which is given by numbers for eg Product ID 1 and so on.
-2. The buy does not redirect to any other page and also I for some reason was not able to make the icons for the header as shown in the demo video so I tried customising it in my own way.
-3. ``` <audio id="welcome-audio" src="Welcome - Sound Effect.mp3" preload="auto"></audio> ``` tried adding this just to make it a little more fun
-4. I realised that I couldve used loop to code the entire product catalog to make the code shorter. Kept this in mind for future.
-5. Made the website responsive too.
-6. Showed the total price by calculating the total amount into quantity of it.
+Imagine you're part of a team responsible for managing a trendy online hypermarket. Unfortunately, our e-commerce platform has encountered unexpected technical issues, leaving customers unable to make purchases through the website.
 
+To keep our loyal customers happy and the business running smoothly, we've devised a special challenge for you. Using a terminal-based interface—a digital lifeline to our shop's backend—you'll step into the shoes of our tech-savvy troubleshooters.
 
-I enjoyed this task as this was one of my comfort tasks where I just kept on learning more and understood more js concepts and tried implementing it.
-Hoping to make more projects like these.
-  
+Your mission is clear: navigate through the virtual maze of glitchy code and faulty scripts to successfully purchase products from our hypermarket.
+
+## Briefing on the basics
+
+If you haven't got much knowledge of HTML and CSS, don't worry! HTML is a language used to describe the structure of the pages you see on the browser, whereas CSS enables those pages to look beautiful and tidy. Additionally, JavaScript can be used to create dynamically updating content, control multimedia, and animate images! 
+
+Here are some resources to help you learn :
+- [Building your first with HTML and CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
+- [What is Javascript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
+
+You are always welcome to surf the web to learn more!
+
+## Guidlines
+
+In this task, you are provided with a website containing a broken terminal. Your first objective is to recreate the User Interface (UI) displayed on the left side of the terminal, as shown in the demo provided below. You have to fetch the assets needed from the API we have provided. The design can be customized freely while ensuring it contains all the elements shown in the demo.
+
+[DEMO VIDEO](https://drive.google.com/file/d/1OZuKV-NKayKc-9--DWFuF29liGCuQaep/view?usp=drive_link)
+<br>
+API : https://fakestoreapi.com
+
+Your next objective is to integrate functional commands into the terminal. Below are the commands to implement along with their descriptions:
+
+- list: Display all available products.
+- details 'product_id': View details of a specific product identified by its ID.
+- add 'product_id': Add a specific product to your cart using its ID.
+- remove 'product id': To remove the product from the cart
+- cart: View the current items in your cart.
+- buy: Proceed to a new webpage where you can review items in your cart along with the total price, enabling you to finalize your purchase.
+- clear: Clear the terminal screen.
+- search 'product_name': Search a product by name.
+- sort 'price/name': Sort the products based on the price or the name.
+
+Implementing these commands will make the terminal interactive and functional. The "buy" command, in particular, should lead to a webpage displaying your cart contents and total price, facilitating the checkout process.
+
+Your creativity, as well as the design and functionality of the UI and the terminal, will be evaluated. Remember to ensure the webpage is responsive!

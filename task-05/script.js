@@ -6,19 +6,21 @@ let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
 
 window.addEventListener('load', function() {
-    // Ensure user interaction before playing audio
+    // Ensuring user interaction to play the audio
     document.body.addEventListener('click', playAudioOnce);
 });
 
 function playAudioOnce() {
     var audio = document.getElementById('welcome-audio');
     audio.play();
-    // Remove event listener after first play
+    
     document.body.removeEventListener('click', playAudioOnce);
 }
 
 
-// Handle user input
+
+
+
 function handleInput(command) {
     const action = command.trim().toLowerCase();
     const args = action.split(" ");
@@ -78,7 +80,7 @@ function handleInput(command) {
     terminalInput.value = '';
 }
 
-// Display available commands
+// Display commands
 function viewCommand() {
     terminalOutput.innerHTML += "Available Commands:<br>";
     terminalOutput.innerHTML += "- <strong>help</strong>: Show available commands<br>";
@@ -92,7 +94,7 @@ function viewCommand() {
     terminalOutput.innerHTML += "- <strong>cart</strong>: View all products in the cart<br>";
 }
 
-// Fetch products from API and display them
+// Fetch products from API 
 function list() {
     fetch('https://fakestoreapi.com/products')
         .then(res => res.json())
@@ -104,7 +106,7 @@ function list() {
         });
 }
 
-// Display products
+// Display 
 function displayProducts(products) {
     terminalOutput.innerHTML += "<br>Products:<br>";
     products.forEach(product => {
@@ -112,7 +114,7 @@ function displayProducts(products) {
     });
 }
 
-// Clear the terminal
+// Clear terminal
 function clearTerminal() {
     terminalOutput.innerHTML = '';
 }
@@ -160,7 +162,7 @@ function sortProducts(key) {
         });
 }
 
-// Update the product catalog UI
+
 // Update the product catalog UI
 function updateProductCatalog(products) {
     const catalogContainer = document.querySelector('.product-catalog');
@@ -205,7 +207,7 @@ function fetchProductDetails(productId) {
         });
 }
 
-// Add a product to the cart by ID
+// Add a product
 function addProductToCart(productId) {
     fetch(`https://fakestoreapi.com/products/${productId}`)
         .then(res => res.json())
@@ -229,14 +231,14 @@ function addProductToCart(productId) {
         });
 }
 
-// Remove a product from the cart by ID
+// Remove a product 
 function removeProductById(productId) {
     cartItems = cartItems.filter(item => item.productId !== parseInt(productId));
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
     terminalOutput.innerHTML += `<br>Product ID ${productId} removed from cart.<br>`;
 }
 
-// View all products in the cart
+// View all products 
 function viewCart() {
     terminalOutput.innerHTML += "<br>Cart Contents:<br>";
     if (cartItems.length > 0) {
@@ -250,7 +252,7 @@ function viewCart() {
 
 
 
-// Add event listener for the input field
+
 terminalInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         handleInput(terminalInput.value);
