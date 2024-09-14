@@ -16,3 +16,5 @@ I still believe I can learn a lot from this one single project and would love to
 ## Problems I faced:
 I had faced a lot of problem in which the first code that I  hade implemented never was able to give me the subtitle option. It would find the imdb code and then say "No subtitles found"
 For this issue I checked with the opensubtitles website and found out that the imdb was showing a completely different film at first, and that this example movie had a different 'idmovie' which was different from my imdb hence it couldnt scrape it. But then I checked with finding subtitles through the name of the movie, then I also tried to use opensubtitles.com API but nothing seemed to work. Even tried an alternative website to opensubtitles but that also did not work properly until the code I was able to implement at last. And finally was able to complete this task.
+
+Please download the movie and put the file path to get the options.
