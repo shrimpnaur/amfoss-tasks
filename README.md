@@ -26,15 +26,15 @@ Also there were a few tasks which gave me a whole new understanding about a lot 
 
 | Task List | Description | Status |
 | :-:       | :-:         | :-:    |
-| Task-00 | Install Linux | Completed |
-| Task-01 |  Type Maestro  | Completed |
-| Task -02| Terminal Chaos | Completed |
-| Task-03| Hello, World! |Completed|
-| Task-04| Gopal and his PagePal | Completed|
-| Task-05| TerminalTrolly | Completed|
-| Task-06| OpenDocs |Completed|
-| Task-07| Pirate's Dilemma |Completed|
-| Task-08| Blog Burst |Completed|
-| Task-09| HERO-DEX! |In progress|
-| Task-10|  Operation Pixel Merge |Completed|
+| [Task-00](task-00)| Install Linux | Completed |
+| [Task-01](task-01) |  Type Maestro  | Completed |
+| [Task -02](task-02)| Terminal Chaos | Completed |
+| [Task-03](task-03)| Hello, World! |Completed|
+| [Task-04](task-04)| Gopal and his PagePal | Completed|
+| [Task-05](task-05)| TerminalTrolly | Completed|
+| [Task-06](task-06)| OpenDocs |Completed|
+| [Task-07](task-07)| Pirate's Dilemma |Completed|
+| [Task-08](task-08)| Blog Burst |Completed|
+| [Task-09](task-09)| HERO-DEX! |In progress|
+| [Task-10](task-10)|  Operation Pixel Merge |Completed|
 
